@@ -1,0 +1,35 @@
+{
+  "name": "permissions",
+  "version": "0.1.1",
+  "description": "Manage permissions.",
+  "license": "Apache-2.0",
+  "author": "kiwicopple",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "permissions",
+    "authorization",
+    "access-control"
+  ],
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
